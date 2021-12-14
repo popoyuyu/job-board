@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Post A Job</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: rgb(247, 203, 217);
+      text-align: center;
+    }
+
+    .container {
+      background-color: darkorchid;
+      color: white;
+      width: 70%;
+      padding: 1em;
+      margin-top: 1em;
+      border-radius: .5em;
+    }
+
+    h1 {
+      margin-bottom: 1em;
+    }
+
+    div {
+      margin-bottom: .5em;
+    }
+
+    button {
+      border: none;
+      border-radius: .5em;
+      padding: .5em 1em;
+      background-color: rgb(247, 203, 217);
+      color: black;
+      margin-top: 1em;
+    }
+
+    button:hover {
+      cursor: pointer;
+      font-weight: bold;
+      background-color: white;
+      color: rgb(247, 203, 217);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Post A New Job Opening</h1>
+    <form action="/JobPosting" method="post">
+      <div><label for="title">Job Title</label>
+        <input id="title" name="title" type="text">
+      </div>
+      <div><label for="description">Description</label>
+        <input id="description" name="description" type="textarea">
+      </div>
+      <div><label for="company">Company Name</label>
+        <input for="campany" name="company" type="text">
+      </div>
+      <div><label for="name">Contact Name</label>
+        <input for="name" name="name" type="text">
+      </div>
+      <div><label for="email">Contact Email</label>
+        <input for="email" name="email" type="text">
+      </div>
+      <div><label for="number">Contact Number</label>
+        <input for="number" name="number" type="text">
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
